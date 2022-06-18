@@ -7,9 +7,9 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. As a developer, I am creating a Rails application with a model called Cohort that has_many students, but OOPS! I forgot to add the foreign key. How can I fix this mistake? What is the name of the foreign key? Would the foreign key be on the Cohort model or the Student model?
 
-  Your answer:
+  Your answer: so we would need to generate a controller. This will allow us to connect the two with the foreign key. To the cohort model we as the has_many students adn to the students we add the, excuse me I forgot the name but we add another key in there tp link it to the cohort so we could add students.
 
-  Researched answer:
+  Researched answer: I completely remembered when I read online. The foriegn key is what we use to link two different data tables together. So if I had a data table with teams and then one with players, the team commns would have thier own keys. We then would use a foriegn key to link the correct players to thte correct team. But the key must be the same as the parent table in order to link to the child table..
 
 
 
