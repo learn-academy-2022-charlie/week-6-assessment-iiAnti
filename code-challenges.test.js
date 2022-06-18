@@ -96,14 +96,14 @@
 
   // create a describe it that expects the output of and array with remainder numbers
 
-    // describe('num', () => { 
-    //   it("takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3", () => {
-    //     const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
-    //     const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
-    //     expect(num(hodgepodge1)).toEqual([ 2, 0, -1, 0 ])
-    //     expect(num(hodgepodge2)).toEqual([ 2, 1, -1 ])
-    //   })
-    // })
+    describe('num', () => { 
+      it("takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3", () => {
+        const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
+        const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
+        expect(num(hodgepodge1)).toEqual([ 2, 0, -1, 0 ])
+        expect(num(hodgepodge2)).toEqual([ 2, 1, -1 ])
+      })
+    })
 
 
     // I failed 
@@ -131,14 +131,15 @@
 // output:[ 2, 0, -1, 0 ]
         // [ 2, 1, -1 ]
 
-          // const num = (numbers) => {
-          //   let arr = numbers.filter(value =>{
-          //     if(value === 'number'){
-          //         return value % 3
-          //     }
-          //   })
-          //   return arr 
-          // }
+          const num = (numbers) => {
+            let ha = []
+            let arr = numbers.filter(value =>{
+              if(value === 'number'){
+                  return value % 3
+              }
+            })
+            return arr 
+          }
 
           // - Array [
           //   -   2,
