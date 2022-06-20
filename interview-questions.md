@@ -25,24 +25,33 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Three of the rails generators I have used are are model, controller, and resource. The model created the model for my db. So basically you give it an app name and the based onn what you name it, lets say book, you vill have a title with a string an author with a string and a bio with text. The controller creates a routing controller so that we can link our methods to to the view and the routes of the app. When we generate a resource, we create both the model and the controller in one go, so it saves us time .
 
-  Researched answer: so I was right, but to add to the question there are other g commands like migration, which  is what allows us to use add_colum and such commands withing the app to be able to add to our table.  An interesting one I found was the g scaffold. Apparently this one creates many files inn the db and is only for intensive editing and modifying. Also said to give headaches. And I already get plenty of those so i hope I don't have to use it any time soon. I also found that ever g command are built with thir which allows for changing files in the API and what also allows for parsing
+  Researched answer: so I was right, but to add to the question there are other g commands like migration, which  is what allows us to use add_colum and such commands withing the app to be able to add to our table.  An interesting one I found was the g scaffold. Apparently this one creates many files inn the db and is only for intensive editing and modifying. Also said to give headaches. And I already get plenty of those so i hope I don't have to use it any time soon. I also found that ever g command are built with thir which allows for changing files in the API and what also allows for parsing.
 
 
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform? 
-action: "GET"    location: /students          
 
-action: "POST"   location: /students       
+
+action: "GET"    location: /students   
+- This one links to the index of the methods. It allows for us to see all the info or a table, or if we wanted to, just a certain row as in an ID. For that you would have to call upon and id.      
+
+action: "POST"   location: /students    
+- This links with Create. This allows us to create a new row or content in the data base. You can add as many as you would like, but remember this method will require you to have a params to be able to take in the values for the new id or else you could receive nill.   
 
 action: "GET"    location: /students/new
+-This is requesting a new form, which connects to the edit. This will allows us to accuire a form for editin gor creating a new id.
 
-action: "GET"    location: /students/2  
+action: "GET"    location: /students/2 
+-This action correlates to what I sai before, since we have a 2 at the end of wha we are requesting, it is telling the system to give us the row with the id of 2. This part connects to the show method since we are only asking for one thing. 
 
-action: "GET"    location: /students/2/edit    
+action: "GET"    location: /students/2/edit
+-this one connects with the edit method which gives us a form to be able to edit the content we choose. Remember, this is just to edit, but not to update, update is in patch. This one as well requires params.  
 
-action: "PATCH"  location: /students/2      
+action: "PATCH"  location: /students/2 
+-this follows after what I said in the qs before, this comes after the edit form, adn connects with the method, update. when wanting to edit a key value in the db for an ID, in this case, 2. this also needs a params.
 
-action: "DELETE" location: /students/2      
+action: "DELETE" location: /students/2 
+-this action connects with the destroy method. When using this, we also need a params, to be able to give it value. So in this case we are telling it to delete the row with the id of 2.  
 
 
 
