@@ -56,3 +56,15 @@ action: "DELETE" location: /students/2
 
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
+
+
+1. As a user I can create a new list to separate different areas of need
+2. As a user I can activate dark mode to have an ease on my eyes
+3. As a user can add a new item to the to do list 
+4. as a user I can delete something from the to do list
+5. As a user I can order my list of importance first 
+6. As a user I can check when a item as been completed 
+7. As a user I can share my list with a friend/worker/group and have it all linked(when one person checks an item complete, it checks it for everyone else)
+8. As a user I can add a date to each/all items(in case they want to complete them on certain days)
+9. As a user I can have my app notify me about items on the list the day day before, day of , or day after. (they can choose when and what days to get notified.)
+10. As a user I can save the to do list to use again another time 

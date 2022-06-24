@@ -63,6 +63,7 @@
 
 
   const joined = (join) => {
+    
     let arr = join.map(value => `${value.name} is ${value.occupation}`
      )
      let sentence = arr.map(value => value.charAt(0).toUpperCase() + value.substring(1)
@@ -89,14 +90,14 @@
 
   // create a describe it that expects the output of and array with remainder numbers
 
-    // describe('num', () => { 
-    //   it("takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3", () => {
-    //     const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
-    //     const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
-    //     expect(num(hodgepodge1)).toEqual([ 2, 0, -1, 0 ])
-    //     expect(num(hodgepodge2)).toEqual([ 2, 1, -1 ])
-    //   })
-    // })
+    describe('num', () => { 
+      it("takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3", () => {
+        const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
+        const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
+        expect(num(hodgepodge1)).toEqual([ 2, 0, -1, 0 ])
+        expect(num(hodgepodge2)).toEqual([ 2, 1, -1 ])
+      })
+    })
 
 
     // I failed 
@@ -124,13 +125,13 @@
 // output:[ 2, 0, -1, 0 ]
         // [ 2, 1, -1 ]
 
-          // const num = (numbers) => {
+          const num = (numbers) => {
            
-          //   let arr = numbers.filter(value => typeof value === 'number')
-          //   let round = arr.map(value => value % 3)
-          //     return round
+            let arr = numbers.filter(value => typeof value === 'number')
+            let round = arr.map(value => value % 3)
+              return round
             
-          // }
+          }
 
           
 
@@ -157,15 +158,15 @@
 
           // create a describe it with the expect of all the numbers in the array summed after being cubed 
 
-          // describe("cubed", () => {
-          //   it("takes in an array of numbers and returns the sum of all the numbers cubed", () => {
-          //     const cubeAndSum1 = [2, 3, 4]
-          //     const cubeAndSum2 = [0, 5, 10]
-          //     expect(cubed(cubeAndSum1)).toEqual(99)
-          //     expect(cubed(cubeAndSum2)).toEqual(1125)
+          describe("cubed", () => {
+            it("takes in an array of numbers and returns the sum of all the numbers cubed", () => {
+              const cubeAndSum1 = [2, 3, 4]
+              const cubeAndSum2 = [0, 5, 10]
+              expect(cubed(cubeAndSum1)).toEqual(99)
+              expect(cubed(cubeAndSum2)).toEqual(1125)
 
-          //   })
-          // })
+            })
+          })
 
 
           // I failed 
@@ -191,13 +192,13 @@
     // the function will 
 
 
-          // const cubed = (cube) => {
-          //   let sum = 0
-          //   for(let i = 0; i < cube.length; i++){
-          //     sum += cube[i] * cube[i] * cube[i] 
-          //   }
-          //   return sum
-          // }
+          const cubed = (cube) => {
+            let sum = 0
+            for(let i = 0; i < cube.length; i++){
+              sum += cube[i] * cube[i] * cube[i] 
+            }
+            return sum
+          }
 
           // I passed 
         //   PASS  ./code-challenges.test.js
