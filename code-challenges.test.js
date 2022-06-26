@@ -64,11 +64,23 @@
 
   const joined = (join) => {
     
-    let arr = join.map(value => `${value.name} is ${value.occupation}`
-     )
-     let sentence = arr.map(value => value.charAt(0).toUpperCase() + value.substring(1)
-     )
-        return sentence
+    // let arr = join.map(value => `${value.name} is ${value.occupation}`
+    //  )
+    let arr = join.map(value => `${value.name}`)
+    let str = arr.toString()
+    let rep = str.replace(/,/g,' ')
+    //  )
+     let newArr = rep.split(" ")
+     for(let i = 0; i < newArr.length; i++){
+      newArr[i] = newArr[i].charAt(0).toUpperCase() + newArr[i].slice(1)
+     }
+     let anotherArr = newArr.join(" ")
+     let again = anotherArr.split(" ")
+
+    //  let sentence = join.map(value => `${anotherArr.name} is ${value.occupation}`
+    //   )
+    //     return sentence
+    return again
        }
 
   // const joined = (join) => {
