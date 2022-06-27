@@ -62,26 +62,30 @@
 // output:["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
 
 
-  const joined = (join) => {
+  // const joined = (join) => {
     
     // let arr = join.map(value => `${value.name} is ${value.occupation}`
     //  )
-    let arr = join.map(value => `${value.name}`)
-    let str = arr.toString()
-    let rep = str.replace(/,/g,' ')
-    //  )
-     let newArr = rep.split(" ")
-     for(let i = 0; i < newArr.length; i++){
-      newArr[i] = newArr[i].charAt(0).toUpperCase() + newArr[i].slice(1)
-     }
-     let anotherArr = newArr.join(" ")
-     let again = anotherArr.split(" ")
+    // let arr = join.map(value => `${value.name}`.charAt(0).toUpperCase() + `${value.name}`.substring(1).toLowerCase())
+    // let arr = join.map(value => `${value.name}`)
+    // let str = arr.toString()
+    // let rep = str.replace(/,/g,' ')
+    // // //  )
+    //  let newArr = rep.split(" ")
+    //  let the = newArr.map((value) => {
+    //    value[0].toUppercase() + value.substring(1)
+    //  }).join(" ")
+    //  for(let i = 0; i < newArr.length; i++){
+    //   newArr[i] = newArr[i].charAt(0).toUpperCase() + newArr[i].slice(1)
+    //  }
+    //  let anotherArr = newArr.join(" ")
+    //  let again = anotherArr.split(" ")
 
-    //  let sentence = join.map(value => `${anotherArr.name} is ${value.occupation}`
-    //   )
-    //     return sentence
-    return again
-       }
+    // //  let sentence = join.map(value => `${anotherArr.name} is ${value.occupation}`
+    // //   )
+    // //     return sentence
+    // return
+      //  }
 
   // const joined = (join) => {
   //   let {name, occupation} = join 
@@ -89,6 +93,17 @@
   //   return sentence
   // }
 
+  const joined = (join) => {
+    
+    let arr = join.map(value => `${value.name} is ${value.occupation}`
+     )
+     let sentence = arr.map(value => value.charAt(0).toUpperCase() + value.substring(1)
+     )
+        return sentence
+       }
+
+
+      //  I still failed. I figured out thow to cap the second word in the name, but I couldn't get it back to a proper array for interpolation.
 
 
 
